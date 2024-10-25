@@ -1,0 +1,451 @@
+/*Contenedor de botones del menu*/
+.parent{
+    margin-right: 50%;
+    margin-left: 30%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    /*Links de los botones del menu*/
+    .parent a{
+    border-color: black;
+    color: aliceblue;
+    font-size: x-large;
+    padding-top: 80px;
+    text-align: center;
+    -webkit-text-stroke: 1.0px ;
+    }
+    /*Boton p del menu*/
+    .p{
+    position: relative;
+    margin-left:-10px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+    background: url(../../imagenes/plantas.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    grid-area: 1 / 1 / 2 / 2;
+    }
+    /*Boton c del menu*/
+    .c{
+    position: relative;
+    margin-left: -90px;
+    margin-right: 10px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+    background: url(../../imagenes/cactus.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    grid-area: 1 / 2 / 2 / 3;
+    }
+    /*Boton h del menu*/
+    .h{
+    position: relative;
+    padding-left: -30px;
+    margin-left: -10px;
+    width: 220px;
+    height: 200px;
+    padding: 30px;
+    background: url(../../imagenes/herramientas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    grid-area: 1 / 3 / 2 / 4;
+    }
+    /*Boton s del menu*/
+    .s{
+    position: relative;
+    margin-left: 110px;
+    margin-right: -30px;
+    width: 220px;
+    height:200px;
+    padding: 30px;
+    background: url(../../imagenes/sutrato.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    grid-area: 2 / 1 / 3 / 2;
+    }
+    /*Boton a del menu*/
+    .a{
+    position: relative;
+    margin-left:-130px;
+    height: 200px;
+    width: 220px;
+    padding: 30px;
+    background: url(../../imagenes/accesorios.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    grid-area: 2 / 3 / 3 / 4;
+    }
+    /*hover del boton a*/
+    .a:hover .cort_a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(60, 255, 0);
+    opacity: .5;
+    transition: 2s;
+    }
+    .a:hover {
+    box-shadow: 0 0 20px 5px rgb(60, 255, 0);
+    transition: 2s;
+    }
+    .a:hover a{
+    position:relative;
+    color: black;
+    transition: 2s;
+    }
+    /*Hover del boton s*/
+    .s:hover .cort_s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(60, 255, 0);
+    opacity: .5;
+    transition: 2s;
+    }
+    .s:hover {
+    box-shadow: 0 0 20px 5px rgb(60, 255, 0);
+    transition: 2s;
+    }
+    .s:hover a{
+    position:relative;
+    color: black;
+    transition: 2s;
+    }
+    /*Hover del boton h*/
+    .h:hover .cort_h{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(60, 255, 0);
+    opacity: .5;
+    transition: 2s;
+    }
+    .h:hover {
+    box-shadow: 0 0 20px 5px rgb(60, 255, 0);
+    transition: 2s;
+    }
+    .h:hover a{
+    position:relative;
+    color: black;
+    transition: 2s;
+    }
+    /*Hover del boton c*/
+    .c:hover .cort_c{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(60, 255, 0);
+    opacity: .5;
+    transition: 2s;
+    }
+    .c:hover {
+    box-shadow: 0 0 20px 5px rgb(60, 255, 0);
+    transition: 2s;
+    }
+    .c:hover a{
+    position:relative;
+    color: black;
+    transition: 2s;
+    }
+    /*Hover del boton p*/
+    .p:hover .cort_p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(60, 255, 0);
+    opacity: .5;
+    transition: 2s;
+    }
+    .p:hover {
+    box-shadow: 0 0 20px 5px rgb(60, 255, 0);
+    transition: 2s;
+    }
+    .p:hover a{
+    position:relative;
+    color: black;
+    transition: 2s;
+    }
+    .desc {
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    }
+    .desc .reg{
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    background: rgba(15, 144, 38, 0.877);
+    width: 0;
+    height: 5px;
+    transition: 1s;
+    margin-top: -30px;
+    }
+    .desc:hover .reg{
+    width: 115%;
+    right: -10.5%;
+    }
+    .reg2{
+        margin-top: 300px;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    background: rgb(0, 255, 42);
+    width: 0;
+    height: 3px;
+    transition: 1s;
+    }
+    .reg2:hover .reg2{
+    width: 10%;
+    right: 45%;
+    }
+    #hovers{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+        margin-top: -58%;
+        margin-left: 2%;
+        position: relative;
+        visibility: hidden;
+
+    }
+    #hovers #ac{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    #hovers #ar{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #hovers #arb{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #hovers #bul{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    #hovers #ca{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    #hovers #ac img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+       }
+    #hovers #ar img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers #arb img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers #bul img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers #ca img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+
+    .cajita{
+        display: flex;
+    }
+   
+    .cajita .enlace{
+        display: inline-flex;
+        margin-left: 150px ;
+        margin-top: 40px;
+        font-size: 25px;
+        position:absolute;
+        color: #82d37b;
+        font-family: impact;
+        text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+
+    }
+    #hovers2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+        margin-top: -55.8%;
+        margin-left: 86.5% ;
+        position: relative;
+        visibility: hidden;
+    }
+    #hovers2 #car{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    #hovers2 #enr{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #hovers2 #fl{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #hovers2 #her{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    #hovers2 #sucu{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 300px;
+        height: 150px;
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    #hovers2 #car img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers2 #enr img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers2 #fl img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers2 #her img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    #hovers2 #sucu img{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        width: 140px;
+        height: 140px;
+        margin-right: 300px;
+    }
+    .sugerenias{
+        align-items: center;
+        text-align: center;
+        margin-left: 10%;
+        font-size: 18px;
+        font-family: 'Athena';
+        
+    }
+    .sugerenias #correo{
+        width: 310px;
+        height: 30px;
+    }
+    .sugerenias #tel{
+        width: 310px;
+        height: 30px;
+    }
+    .sugerenias #asun{
+        width: 310px;
+        height: 30px;
+    }
+    .sugerenias fieldset{
+border: 4px solid rgba(4, 112, 29, 0.621);
+border-radius: 20px;
+background-image: url(../../imagenes/hand-painted-watercolor-nature-background_23-2148941599.webp);
+    }
+    #enviar{
+        margin-top: 30px;
+        width: 310px;
+        height: 50px;
+        background-color: rgba(4, 112, 29, 0.621);
+        border: 2px solid rgb(7, 84, 25);
+        font-size: 30px;
+        font-family: 'Athena';
+        border-radius: 20px;
+        margin-bottom: 30px ;
+        
+    }
+    
+    
+   

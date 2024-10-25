@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+.conten{
+    display: grid;
+    grid-template-areas: "head head"
+                          "nav conten";
+}
+header{
+    grid-area: head;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.coSuculentas{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coAcuaticas{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coArbustos{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coArboles{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coBulbosas{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coCactus{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coPlantas_Carnivoras{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coEnredaderas{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coFlores{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.coHerbáceas{
+    border: black solid 1px;
+    grid-area: conten;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+nav{
+    border: black solid 1px;
+    grid-area: nav;
+    margin: 5px;
+}
+content h1{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
